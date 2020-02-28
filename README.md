@@ -4,7 +4,7 @@
 
 ## 주제
 
-워크 플로우 자동화 도구인 Gulp와 Css전처리기인 Scss를 사용하여 보다 빠르고 효율적인 업무를 한다.
+워크 플로우 자동화 도구인 Gulp와 Css전처리기인 Scss를 사용하여 보다 빠르고 효율적인 업무를 합니다.
 
 ## 내용
 
@@ -12,25 +12,25 @@
 
 - **CSS**
 
-	- gulp-scss : SCSS를 CSS로 컴파일
+	- gulp-scss : SCSS를 CSS로 컴파일을 합니다.
 
-	- gulp-autoprefixer : 브라우저 지원을 위해 자동 접두사
+	- gulp-autoprefixer : 브라우저 지원을 위해 자동 접두사 추가합니다.
 
 - **Javascript**
 
-	- gulp-uglify : 파일에 포함된 주석, 공백 등을 제거하는 등 용량을 줄이고 압축
+	- gulp-uglify : 파일에 포함된 주석, 공백 등을 제거하는 등 용량을 줄이고 압축을 해줍니다.
 
 - **image**
 
-	- gulp.spritesmith-multi : 이미지 스프라이트 자동화 
+	- gulp.spritesmith-multi : 이미지 스프라이트 자동화합니다.
 
 - **Common**
 
-	- browser-sync : 파일 변경시 라이브 리로딩
+	- browser-sync : 파일 변경 시 라이브 리로딩합니다.
 
-	- gulp-rename: 컴파일, 압축 등의 작업을 거친 파일의 이름을 변경
+	- gulp-rename: 컴파일, 압축 등의 작업을 거친 파일의 이름을 변경합니다.
 
-	- gulp-concat: 컴파일, 압축 등의 작업을 거친 파일들을 원하는 파일에 합쳐준다.
+	- gulp-concat: 컴파일, 압축 등의 작업을 거친 파일들을 원하는 파일에 합쳐줍니다.
 
 ---
 
@@ -56,3 +56,15 @@
 
 - Gulp: 4.0.2
 - nodejs: 10.16.2
+
+## 폴더 구조
+
+- src/
+
+	- 프로젝트 작업 내용
+
+- settings/
+
+	- gulp
+
+	- scss
