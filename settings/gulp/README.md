@@ -31,21 +31,21 @@ $ npm install gulpjs/gulp.git#4.0 --save-dev
 ```
 // gulp3.0
 gulp.task('myTask', function(){
-	//task
+ //task
 })
 
 // gulp4.0
 function myTask(){
-	//task
+ //task
 }
 
 //내보내기
 function html(done){
-	done();
+ done();
 }
 
 function css(done){
-	done();
+ done();
 }
 
 exports.css = css;
@@ -54,17 +54,17 @@ exports.default = gulp.series(html, css)
 
 - **Series와 Parallel**
 
-	- Series(): Task를 순차적으로 실행한다.
+ - Series(): Task를 순차적으로 실행한다.
 
 ```
 const { series } = require('gulp');
 
 function html(done){
-	done();
+ done();
 }
 
 function css(done){
-	done();
+ done();
 }
 
 exports.build = gulp.series(html, css);
@@ -76,11 +76,11 @@ exports.build = gulp.series(html, css);
 const { parallel } = require('gulp');
 
 function html(done){
-	done();
+ done();
 }
 
 function css(done){
-	done();
+ done();
 }
 exports.build = parallel(html, css);
 ```
@@ -88,22 +88,22 @@ exports.build = parallel(html, css);
 - Series, Parallel 함께 사용하기
 ```
 function html(){
-	//task
+ //task
 }
 function css(){
-	//task
+ //task
 }
 function js(){
-	//task
+ //task
 }
 exports.build = gulp.series(js, parallel(html, css))
 
-	=== gulp.task('js', ['html', 'css'])
+ === gulp.task('js', ['html', 'css'])
 ```
 
 - **Sourcemaps 기본지원**
 
-	- 소스맵을 기본적으로 지원하기 때문에 gulp-sourcemaps 모듈을 사용하지 않아도 된다.
+ - 소스맵을 기본적으로 지원하기 때문에 gulp-sourcemaps 모듈을 사용하지 않아도 된다.
 
 
 ### 참고한 블로그
