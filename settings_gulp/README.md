@@ -181,9 +181,9 @@ gulp -v
 	=== gulp.task('js', ['html', 'css'])
 	```
 
-## 확인 필요
+## 기타
 
-### 부족한 부분
+### 나의 생각
 
 - gulp3.0의 기능, gulp4.0에서 추가된 기능을 정확히 파악하는데 한계가 있는 것 같아 좀 더 공부가 필요
 
@@ -193,7 +193,7 @@ gulp -v
 
 	- symlink, regisrty, vynl ... 정리 필요
 
-## 참고 블로그
+### 참고 블로그
 
 - [gulp DOCS](https://gulpjs.com/docs/en/getting-started/quick-start)
 

@@ -18,7 +18,7 @@
 
 	- gulp-autoprefixer : 브라우저 지원을 위해 자동 접두사를 추가합니다.
 
-	- gulp-postCss : 자바스크립트로 작성된 플러그인으로 autoprefixer를 생성합니다.
+	- gulp-postCss : 자바스크립트로 작성된 플러그인인 postCss로 autoprefixer를 생성합니다.
 
 - **Javascript**
 
@@ -30,11 +30,15 @@
 
 - **Common**
 
-	- browser-sync : 파일 변경 시 라이브 리로딩합니다.
+	- browser-sync : 파일 변경시에 이를 자동으로 감지해서 브라우저 Refresh 를 수행합니다.
 
 	- gulp-rename: 컴파일, 압축 등의 작업을 거친 파일의 이름을 변경합니다.
 
 	- gulp-concat: 컴파일, 압축 등의 작업을 거친 파일들을 원하는 파일에 합쳐줍니다.
+
+	- del : 특정 디렉토리를 삭제해줍니다.
+
+	- merge-stream : 원하는 파일의 스트림을 병합합니다.
 
 ---
 
@@ -78,9 +82,9 @@
 
 		- scss
 
-## 확인 필요
+## 기타
 
-### 부족한 부분
+### 나의 생각
 
 - postCss, cssnano 디테일하게 공부 필요
 

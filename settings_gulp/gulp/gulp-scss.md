@@ -2,6 +2,16 @@
 
 - with **gulp-autoprefixer, gulp-rename, gulp-postCss, culp-cssnono**
 
+  - gulp-scss : SCSS를 CSS로 컴파일을 합니다.
+
+  - gulp-cssnano : css 작성 시 실수할 수 있는 요소들, 불필요하게 길게 작성하는 요소들을 정리해줍니다.
+
+  - gulp-autoprefixer : 브라우저 지원을 위해 자동 접두사를 추가합니다.
+
+  - gulp-postCss : 자바스크립트로 작성된 플러그인인 postCss로 autoprefixer를 생성합니다.
+
+  - gulp-rename: 컴파일, 압축 등의 작업을 거친 파일의 이름을 변경합니다.
+
 ## 설명
 
 ### 1. 모듈 설치
@@ -9,7 +19,6 @@
 > 작업에 필요한 Plugin 설치 
 
 ```
-// Cli install
 npm install gulp-sass --save-dev
 npm install gulp-rename --save-dev
 npm install autoprefixer --save-dev
@@ -22,7 +31,6 @@ npm install gulp-postCss --save-dev
 > Gulp 사용 및 자동화를 위해 필요한 모듈을 변수에 선언
 
 ```
-// 모듈 변수 선언
 const sass = require("gulp-sass"),
       rename = require("gulp-rename"),
       autoprefixer = require("autoprefixer"),
@@ -74,7 +82,7 @@ const scssUtils = () => {
   // autoprefixer 적용, cssnano 실행
   .pipe(postcss([autoprefixer({}), cssnano()]))
 
-  // gulp-rename: 원하는 이름으로 수정
+  // 원하는 이름으로 수정
   .pipe(rename('utils.css'))
   .pipe(gulp.dest(dist), { sourcemaps: true })
   .pipe(browserSync.stream())
@@ -102,7 +110,6 @@ exports.build = gulp.parallel(scssUtils, watch);
 > autoprefix 설정: 브라우저 지원 범위 지정
 
 ```
-// package.json
 "browserslist": [
  "last 2 versions",
  ">1%"
@@ -110,16 +117,14 @@ exports.build = gulp.parallel(scssUtils, watch);
 // gulpfile.js 내부에 지정을 하니 경고창이 발생해서 package.json에 설정
 ```
 
-### 정보
+## 기타
 
-### 궁금한 부분 
+### 나의 생각
 
-- autoprefix 관련해서 디테일하게 공부 필요!
+- autoprefix 관련해서 디테일하게 공부 필요
 
 
 ### 참고 블로그
-
-- [Autoprefixer](https://evilmartians.com/chronicles/autoprefixer-7-browserslist-2-released)
 
 - [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
 
