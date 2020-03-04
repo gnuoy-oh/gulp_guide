@@ -121,7 +121,7 @@ exports.build = gulp.parallel(scssUtils, watch);
 
 ### 나의 생각
 
-- autoprefix 관련해서 디테일하게 공부 필요
+- autoprefix 관련해서 디테일하게 파악 필요
 
 
 ### 참고 블로그

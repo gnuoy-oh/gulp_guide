@@ -62,8 +62,7 @@ exports.build = gulp.parallel( server, watch);
 
 ### 나의 생각
 
-- vscode에서 Live Server로 작업해도 된다.
-
+- vscode에서 Live Server로 작업해도 됨
 
 ### 참고 블로그
 

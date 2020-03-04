@@ -26,11 +26,13 @@
 
 - **image**
 
-	- gulp.spritesmith-multi : 이미지 스프라이트 자동화합니다.
+	- gulp.spritesmith-multi : png 파일 형식의 이미지를 스프라이트 자동화합니다.
+
+	- gulp-svg-sprite : svg 이미지를 스프라이트 자동화합니다.
 
 - **Common**
 
-	- browser-sync : 파일 변경시에 이를 자동으로 감지해서 브라우저 Refresh 를 수행합니다.
+	- browser-sync : 파일 변경시에 이를 자동으로 감지해서 브라우저 Refresh를 수행합니다.
 
 	- gulp-rename: 컴파일, 압축 등의 작업을 거친 파일의 이름을 변경합니다.
 
@@ -40,17 +42,21 @@
 
 	- merge-stream : 원하는 파일의 스트림을 병합합니다.
 
+	- gulp-size : 해당 작업 파일 크기를 출력합니다. (Cli에 minifyjs 1.4kB 으로 출력)
+
+  - gulp-util : 컬러 메시지등 로그를 쉽게 화면에 출력합니다.
+
 ---
 
 ### Scss Basic
 
-- **중첩(Nesting)**
+- **Variables**
 
-- **변수(Variables)의 사용**
+- **Nesting**
 
-- **mixin 를 사용한 Global Css 생성**
+- **Mixin**
 
-- **조건과 반복**
+- **조건문과 반복문**
 
 	- if else
 
@@ -59,6 +65,10 @@
 	- while
 
 	- each
+
+- **Import / export**
+
+- **Extend**
 
 ## 환경
 
@@ -70,17 +80,25 @@
 
 - src/
 
-	- gulpfile.js
+- gulpfile.js
 
-	- package.json
+- package.json
 
-- 프로젝트 작업 내용
+- node_modules/
 
-	- settings/
+- README.md
 
-		- gulp
+- settings_gulp/
 
-		- scss
+	- README.md
+
+	- gulp/
+
+- settings_scss
+
+	- README.md
+
+	- scss/
 
 ## 기타
 
@@ -89,3 +107,5 @@
 - postCss, cssnano 디테일하게 공부 필요
 
 - scss 더 디테일하게 정리할 것
+
+- gulp-svg 추가하자 
