@@ -23,7 +23,7 @@ npm install gulp-sass --save-dev
 npm install gulp-rename --save-dev
 npm install autoprefixer --save-dev
 npm install cssnano --save-dev
-npm install gulp-postCss --save-dev
+npm install gulp-postcss --save-dev
 ```
 
 ### 2. 모듈 불러오기

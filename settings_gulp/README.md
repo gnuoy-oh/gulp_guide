@@ -52,9 +52,9 @@ $ npm install gulpjs/gulp-cli --global
 
 // 작업할 해당 프로젝트에 Gulp 4.0 설치
 $ npm install gulpjs/gulp.git#4.0 --save-dev
+$ npm install gulp --save-dev
 
 // package.json 경로에 gulpfile.js 파일 생성
-$ mkdir gulpfile.js
 
 // gulp 버전 확인
 gulp -v
