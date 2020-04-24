@@ -34,6 +34,25 @@ npm init
 
 ### gulp4.0으로 세팅하기(기존 gulp3.0 삭제)
 
+- 처음 셋팅하기
+
+```
+// Gulp Cli 설치
+$ npm install gulpjs/gulp.git#4.0 --save-dev
+$ npm install gulpjs/gulp-cli --global
+
+// 작업할 해당 프로젝트에 Gulp 4.0 설치
+$ npm install gulp --save-dev
+
+// Mac에서 권한 문제로 설치가 안되는 경우가 있는 경우, 아래와 같이 설치한다.
+sudo npm install gulpjs/gulp-cli --global 
+
+// package.json 경로에 gulpfile.js 파일 생성
+
+// gulp 버전 확인
+gulp -v
+```
+
 - 기존의 설치되어 있던 gulp3.0 버전에서 gulp 4.0으로 변경하여 다시 세팅해보자.
 
 ```
