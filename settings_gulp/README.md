@@ -36,6 +36,8 @@ npm init
 
 - 처음 셋팅하기
 
+- sudo 관련 참고: https://blog.sonim1.com/125
+
 ```
 // Gulp Cli 설치
 $ npm install gulpjs/gulp.git#4.0 --save-dev
