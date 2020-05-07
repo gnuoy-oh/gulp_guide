@@ -2,6 +2,7 @@
 
 ## 설명
 
+
 - Sass는 CSS pre-processor(전처리기)로서 CSS의 한계와 단점을 보완하여 가독성이 높고, 코드 재사용에 유리한 CSS를 생성하기 CSS의 확장이라고 할 수 있다.
 
 	- Variables
