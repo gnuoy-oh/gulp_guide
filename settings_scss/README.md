@@ -100,7 +100,7 @@
 	node-sass --watch src/scss --output dist/css
 	```
 
-### Rubu Sass
+### Ruby Sass
 
 - Window 기준 Ruby Installer 설치 필요
 
