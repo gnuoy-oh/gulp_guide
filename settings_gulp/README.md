@@ -220,5 +220,7 @@ gulp -v
 
 - [gulp setting](https://stackoverflow.com/questions/33429727/how-do-i-install-gulp-4)
 
-- [gulp setting](https://programmingsummaries.tistory.com/393)
+- [gulp4.0](https://programmingsummaries.tistory.com/393)
+
+- [gulp4.0](https://programmingsummaries.tistory.com/387)
 
