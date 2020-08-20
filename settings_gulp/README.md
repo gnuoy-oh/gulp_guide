@@ -83,6 +83,24 @@ gulp -v
 
 ## 정보
 
+### GULP의 주요 명령어
+
+- **gulp.src(globs[, options])**
+
+  - 변경할 파일 경로를 지정하는 명령어
+
+- **gulp.dest(path[, options])**
+
+  - 결과물을 위치시킬 경로를 지정하는 명령어
+
+- **gulp.task(name[, deps], fn)**
+
+  - 작업할 태스크를 만드는 명령어 
+
+- **gulp.watch(glob [, opts], tasks) 또는 gulp.watch(glob [, opts, cb])**
+
+  - 파일을 실시간 감시해서 변경될 경우 반영해주는 명령어
+
 ### gulp4.0 추가된 내용
 
 - 보편적으로 ES6를 사용하기 때문에 var 대신 let, const 를 사용해서 작업하고, 구조분해할당을 이용해서 gulp의 각 함수를 사용해서 작업한다.
@@ -202,6 +220,29 @@ gulp -v
 	=== gulp.task('js', ['html', 'css'])
 	```
 
+- **gulp.lastRun**
+
+  > 빌드 속도를 개선하기 위한 최선의 방법 중 하나로, 변경된 파일에 대해서만 처리하는 방식으로 성능을 향상 시킨다. watch가 적용된 task에 유용하고, src함수에 옵션을 추가해서 적용한다.
+
+  ~~~
+  let gulp = require('gulp');
+  let jshint = require('jshint');
+
+
+  const jshint () => (){
+    return(
+      gulp
+        .src('js/**/*.js, {since: gulp.lastRun('jshint')});
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'))
+        .pipe(jshint.reporter('fail'));
+    )};
+
+  gulp.watch('js/**/*.js', ['jshint']);
+  ~~~
+
+
+
 ## 기타
 
 ### 나의 생각
@@ -209,8 +250,6 @@ gulp -v
 - gulp3.0의 기능, gulp4.0에서 추가된 기능을 정확히 파악하는데 한계가 있는 것 같아 좀 더 공부가 필요
 
 	- lastRun() 이해를 못함
-
-	- gulp.watch function으로 쓰는 방법
 
 	- symlink, regisrty, vynl ... 정리 필요
 
@@ -224,3 +263,6 @@ gulp -v
 
 - [gulp4.0](https://programmingsummaries.tistory.com/387)
 
+- [gulp setting](https://medium.com/@adnstyle_press/gulp-4-0%EC%9C%BC%EB%A1%9C-%EC%A0%84%ED%99%98%ED%95%98%EA%B8%B0-f793a15d503d)
+
+- [관련 명령어](https://13akstjq.github.io/nodejs/2020/02/28/%EA%B1%B8%ED%94%84(gulp)%EB%A1%9C-%ED%81%AC%EB%A1%9C%EC%8A%A4%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95-%EB%B0%8F-%EB%B9%8C%EB%93%9C%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EA%B8%B0.html)
