@@ -1,4 +1,4 @@
-# gulp-uglify
+# gulp-svg
 
 - with **gulp-size, gulp-util**
 
@@ -6,7 +6,7 @@
 
   - gulp-size : 해당 작업 파일 크기를 출력합니다. (Cli에 minifyjs 1.4kB 으로 출력)
 
-  - gulp-util : 컬러 메시지등 로그를 쉽게 화면에 출력합니다.
+  - gulp-util : 컬러, 메시지 등 로그를 쉽게 화면에 출력합니다.
 
 ## 설명
 
@@ -119,6 +119,16 @@ exports.build = gulp.parallel( sprite, watch);
 
 ## 기타
 
+### SVG를 활용하는 방법
+
+- **svg-sprite 이용**
+
+  - mode: css으로 작업
+
+- **symbol 이용**
+
+  - mode: symbol으로 작업
+
 ### 나의 생각
 
 - 주석 추가 필요, 이해 아직 다 못함 
@@ -129,4 +139,5 @@ exports.build = gulp.parallel( sprite, watch);
 - [npmjs](https://www.npmjs.com/package/gulp-svg-sprite)
 - [gulp+svg](https://www.liquidlight.co.uk/blog/creating-svg-sprites-using-gulp-and-sass/)
 - [gitHub](https://github.com/liquidlight/sass-gulp-svg-sprite/blob/master/gulpfile.js)
+- [gulp + scss](https://www.liquidlight.co.uk/blog/creating-svg-sprites-using-gulp-and-sass/)
 

@@ -266,3 +266,6 @@ gulp -v
 - [gulp setting](https://medium.com/@adnstyle_press/gulp-4-0%EC%9C%BC%EB%A1%9C-%EC%A0%84%ED%99%98%ED%95%98%EA%B8%B0-f793a15d503d)
 
 - [관련 명령어](https://13akstjq.github.io/nodejs/2020/02/28/%EA%B1%B8%ED%94%84(gulp)%EB%A1%9C-%ED%81%AC%EB%A1%9C%EC%8A%A4%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95-%EB%B0%8F-%EB%B9%8C%EB%93%9C%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EA%B8%B0.html)
+
+- [[gulp4 code example]](https://github.com/thecodercoder/frontend-boilerplate/blob/master/gulpfile.js)
+- [[gulp4 code example2]](https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a)
